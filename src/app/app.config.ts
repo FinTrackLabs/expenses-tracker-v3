@@ -23,7 +23,8 @@ import {
 } from '@angular/common/http'
 import { FakeBackendProvider } from './core/helpers/fake-backend'
 import { CalendarEffects } from './store/calendar/calendar.effects'
-import { KanbanEffects } from './store/kanban/kanban.effects'
+import { KanbanEffects } from './store/kanban/kanban.effects';
+import { provideServiceWorker } from '@angular/service-worker'
 
 // scroll
 const scrollConfig: InMemoryScrollingOptions = {
@@ -49,6 +50,12 @@ export const appConfig: ApplicationConfig = {
     provideStoreDevtools({ maxAge: 25, logOnly: !isDevMode() }),
     provideEffects(CalendarEffects),
     provideEffects(AuthenticationEffects, KanbanEffects),
-    provideHttpClient(withFetch(), withInterceptorsFromDi()),
+    provideHttpClient(withFetch(), withInterceptorsFromDi()), provideServiceWorker('ngsw-worker.js', {
+            enabled: !isDevMode(),
+            registrationStrategy: 'registerImmediately'
+          }), provideServiceWorker('ngsw-worker.js', {
+            enabled: !isDevMode(),
+            registrationStrategy: 'registerImmediately'
+          }),
   ],
 }

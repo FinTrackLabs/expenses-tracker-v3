@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8"/>
   <title>Rizz</title>
-  <base href="/" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbvyBxmMbFhrzP9Z8moyYr6dCr-pzjhBE" async ></script>
+  <base href="/"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbvyBxmMbFhrzP9Z8moyYr6dCr-pzjhBE" async=""></script>
 
   <style>
     #splash-screen {
@@ -39,13 +39,17 @@
       }
     }
   </style>
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#1976d2">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#1976d2">
 </head>
 
 <body>
   <app-root></app-root>
   <div id="splash-screen">
-    <img src="./assets/images/logo-sm.png" alt="logo-small" width="46" height="46" />
-    <img alt="Logo" src="./assets/images/logo-dark.png" width="59" height="24" style="margin-left: 6px" />
+    <img src="./assets/images/logo-sm.png" alt="logo-small" width="46" height="46"/>
+    <img alt="Logo" src="./assets/images/logo-dark.png" width="59" height="24" style="margin-left: 6px"/>
   </div>
   <script>
     const appRoot = document.querySelector('app-root');
