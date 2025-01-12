@@ -94,12 +94,20 @@
                   "minify": true,
                   "inlineCritical": false
                 }
+              },
+              "serviceWorker": "ngsw-config.json",
+              "sourceMap": {
+                "scripts": true,
+                "styles": true
               }
             },
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true
+              "sourceMap": {
+                "scripts": true,
+                "styles": true
+              }
             }
           },
           "defaultConfiguration": "production"
