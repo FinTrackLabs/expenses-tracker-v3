@@ -1,0 +1,20 @@
+
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scroll-snap-type: x mandatory; /* Snap scrolling */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
+  white-space: nowrap;
+}
+
+.scroll-content {
+  display: flex;
+  gap: 1rem; /* Add spacing between cards */
+}
+
+.card-wrapper {
+  flex: 0 0 auto; /* Ensure cards don't shrink */
+  scroll-snap-align: start; /* Ensure cards snap neatly */
+  width: 300px; /* Set a consistent card width */
+}

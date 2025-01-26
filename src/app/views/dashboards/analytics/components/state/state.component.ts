@@ -6,6 +6,7 @@ import { stateData } from '../../data'
   standalone: true,
   imports: [],
   templateUrl: './state.component.html',
+  styleUrls: ['./state.component.scss'],
   styles: ``,
 })
 export class StateComponent {

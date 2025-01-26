@@ -2,11 +2,12 @@ import type { ChartOptions } from '@/app/common/apexchart.model'
 import { currency } from '@/app/common/constants'
 import { Component } from '@angular/core'
 import { NgApexchartsModule } from 'ng-apexcharts'
+import {MoneyLabelComponent} from "@component/money-label/money-label.component";
 
 @Component({
   selector: 'ecommerce-state',
   standalone: true,
-  imports: [NgApexchartsModule],
+  imports: [NgApexchartsModule, MoneyLabelComponent],
   templateUrl: './state.component.html',
   styles: ``,
 })
