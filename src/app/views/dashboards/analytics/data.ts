@@ -61,6 +61,46 @@ export const stateData: StateType[] = [
       trend: 'negative',
     },
   },
+  {
+    title: 'Bounce Rate',
+    value: '36.45%',
+    icon: 'iconoir-percentage-circle',
+    description: {
+      percentage: '8%',
+      text: 'Up Bounce Rate Weekly',
+      trend: 'negative',
+    },
+  },
+  {
+    title: 'Bounce Rate',
+    value: '36.45%',
+    icon: 'iconoir-percentage-circle',
+    description: {
+      percentage: '8%',
+      text: 'Up Bounce Rate Weekly',
+      trend: 'negative',
+    },
+  },
+  {
+    title: 'Bounce Rate',
+    value: '36.45%',
+    icon: 'iconoir-percentage-circle',
+    description: {
+      percentage: '8%',
+      text: 'Up Bounce Rate Weekly',
+      trend: 'negative',
+    },
+  },
+  {
+    title: 'Bounce Rate',
+    value: '36.45%',
+    icon: 'iconoir-percentage-circle',
+    description: {
+      percentage: '8%',
+      text: 'Up Bounce Rate Weekly',
+      trend: 'negative',
+    },
+  },
 ]
 
 export const BrowserData = [

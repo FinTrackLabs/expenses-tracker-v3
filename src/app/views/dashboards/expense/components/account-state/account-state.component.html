@@ -1,0 +1,51 @@
+<div class="scroll-container">
+    <div class="scroll-content">
+        @for (data of stateData; track $index) {
+        <div class="card-wrapper">
+          <div class="card">
+            <div class="card-body">
+              <div class="row d-flex justify-content-center"
+                [ngClass]="{'border-dashed-bottom pb-3': data.description}">
+                <div class="col-9">
+                  <h3 class="text-dark mb-0 fw-semibold fs-14">{{ data.title }}</h3>
+                  <app-money-label>
+                    <h3 class="mt-2 mb-0 fw-bold">{{ data.value }} {{data.currency === 'USD'? '$' : ''}}</h3>
+                  </app-money-label>
+              </div>
+              <!--end col-->
+              <div class="col-3 align-self-center">
+                <div
+                  class="d-flex justify-content-center align-items-center thumb-xl bg-light rounded-circle mx-auto"
+                >
+                  <i
+                    class="{{data.icon}} h1 align-self-center mb-0 text-secondary"
+                  ></i>
+                </div>
+              </div>
+              <!--end col-->
+            </div>
+            <!--end row-->
+            @if(data.description){
+                <p class="mb-0 text-truncate text-muted mt-3">
+                              <span
+                                      [class]="
+                                  data.description?.trend == 'positive'
+                                    ? 'text-success'
+                                    : 'text-danger'
+                                "
+                              >{{ data.description?.percentage }}</span
+                              >
+                    {{ data.description?.text }}
+                </p>
+
+             }
+
+
+        </div>
+        <!--end card-body-->
+      </div>
+      <!--end card-->
+    </div>
+        }
+    </div>
+</div>

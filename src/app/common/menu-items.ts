@@ -24,6 +24,13 @@ export const MENU_ITEMS: MenuItem[] = [
         url: '/dashboard/ecommerce',
         parentKey: 'dashboards',
       },
+      {
+        key: 'dashboard-expense',
+        label: 'Expense',
+        url: '/dashboard/expense',
+        parentKey: 'dashboards',
+      },
+
     ],
   },
   {

@@ -14,11 +14,12 @@ import {
   NgProgressModule,
   type NgProgressRef,
 } from 'ngx-progressbar'
+import {FloatingButtonComponent} from "@component/floating-button/floating-button.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NgProgressModule],
+  imports: [RouterOutlet, NgProgressModule, FloatingButtonComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
@@ -54,5 +55,9 @@ export class AppComponent {
         this.progressBar.complete()
       }, 200)
     }
+  }
+
+  onClickFloatingButton() {
+    alert('Floating button clicked');
   }
 }
