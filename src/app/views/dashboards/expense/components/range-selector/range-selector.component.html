@@ -1,0 +1,34 @@
+<form class="d-flex justify-content-center">
+    <div class="row align-items-center w-300">
+        <div class="col-auto mb-1">
+            <select class="form-select">
+                <option>7 days</option>
+                <option>14 days</option>
+                <option>30 days</option>
+                <option>3 months</option>
+                <option>6 months</option>
+                <option>1 year</option>
+                <option>Custom</option>
+            </select>
+        </div>
+        <div class="col-auto  mb-1 w-800">
+            <div class="input-group">
+                <input
+                        type="text"
+                        class="form-control"
+                        appDatepicker
+                        placeholder="Start"
+                        aria-label="StartDate"
+                />
+                <span class="input-group-text">to</span>
+                <input
+                        type="text"
+                        class="form-control"
+                        appDatepicker
+                        placeholder="End"
+                        aria-label="EndDate"
+                />
+            </div>
+        </div>
+    </div>
+</form>
