@@ -36,7 +36,7 @@ export const stateData: StateType[] = [
   },
   {
     title: 'USD Account',
-    value: '6000.00',
+    value: '1000.00',
     icon: 'iconoir-dollar-circle',
     isShared: false,
     currency: 'USD',
