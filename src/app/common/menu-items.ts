@@ -1,4 +1,4 @@
-import { MenuItem } from '../core/models/menu.model'
+import {MenuItem} from '../core/models/menu.model'
 
 export const MENU_ITEMS: MenuItem[] = [
   {
@@ -31,6 +31,21 @@ export const MENU_ITEMS: MenuItem[] = [
         parentKey: 'dashboards',
       },
 
+    ],
+  },
+  {
+    key: 'transactions',
+    icon: 'iconoir-notes',
+    label: 'Transaction',
+    collapsed: false,
+    subMenu: [
+      {
+        key: 'transactions-new',
+        label: 'Add Transaction',
+        url: '/transactions/new',
+        parentKey: 'transactions',
+        icon: 'iconoir-plus-square',
+      }
     ],
   },
   {
